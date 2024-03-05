@@ -1,11 +1,24 @@
+/* This 'universal' selector (*) makes EVERYTHING pink
+* {
+    color: pink;
+} */
+
+/* This 'element' selector (button) makes all buttons font size 30px
+button {
+    font-size: 30px;
+}  */
+
+/* This 'element' selector effects the entire body of the html */
 body {
     background-color: #dad7cd;
 }
 
-h1, h2 {
+/* This selector combines (by using a ,) element selectors to effect both the h1 and the h2 headings */
+h1, h2, h3 {
     color: #344e41;
 }
 
+/* The below ID selectors effect each ID (login and signup) independantly using # */
 #login {
     background-color: #a3b18a;
 }
@@ -14,10 +27,16 @@ h1, h2 {
     background-color: #588157;
 }
 
-span.random1 {
+/* the class selector (.) effects elements within a specific class as defined in the html */
+.random1 {
     color: red;
 }
 
-span.random2 {
+.random2 {
     color: blue;
+}
+
+/* The descendant selector (space) effects specific nested elements */
+article a {
+    color: orangered;
 }
