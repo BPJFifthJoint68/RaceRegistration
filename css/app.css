@@ -27,16 +27,55 @@ h1, h2, h3 {
     background-color: #588157;
 }
 
-/* the class selector (.) effects elements within a specific class as defined in the html */
+/* the class selector (.) effects elements within a specific class */
 .random1 {
     color: red;
 }
 
 .random2 {
-    color: blue;
+    color: green;
 }
 
 /* The descendant selector (space) effects specific nested elements */
 article a {
     color: orangered;
+}
+
+/* This adjacent decendant selector effects a paragraph after the heading h2 it can be used for any nested attribute */
+h2 + p {
+    color: blue;
+}
+
+/* This  direct decentand selector effects the ancor immediately afte after the footer */
+footer > a {
+    color: green;
+}
+
+/* The attribute selector will effect a specified attribute */
+/* This one will make the typed password text purple */
+input[type="password"] {
+    color: purple;
+}
+
+/* The hover pseudo class will make changes when the cursor hovers over a selected element */
+button:hover {
+    background-color: rebeccapurple;
+}
+a:hover {
+    text-decoration: wavy underline;
+}
+
+/* This effects the second line of the list within footer */
+footer li:nth-of-type(2) {
+    text-decoration: line-through;
+}
+
+/* This effects the first letter of the heading h3 */
+h3::first-letter {
+    color: orange;
+}
+
+/* This effects the colour of a cursor selected part of the paragraph text */
+p::selection {
+    background-color: chartreuse;
 }
